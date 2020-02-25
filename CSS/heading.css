@@ -1,0 +1,7 @@
+.heading { 
+    display: flex;
+    font-size: 15vh;
+    font-family: Arimo, Helvetica;
+    color: FF8369;
+    text-align: left;
+}
