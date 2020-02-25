@@ -23,15 +23,15 @@ h3 {
     font-size: 5vh;
     font-family: "Open sans", sans-serif;
     font-weight: 600;
-    color: dark gray;
+    color: #555;
 }
 
 <!-- Color Scheme -->
 <!-- Fonts -->
--Salmon, #FF8369
--Downy, #79C7D6
--Saffron, #FAC232
+-Salmon, #ff8369
+-Downy, #79c7d6
+-Saffron, #fac232
 -Gray, #555
 
 <!-- Backgrounds -->
--White
+-White, #fafbfc
