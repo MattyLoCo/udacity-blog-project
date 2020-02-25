@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+  }
+
+h1 { 
+    font-size: 10vh;
+    font-family: Arimo, Helvetica;
+    color: #FF8369;
+}
+
+h2 {
+    font-size: 7vh;
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 600;
+    color: #79C7D6;
+}
+
+h3 {
+    font-size: 5vh;
+    font-family: "Open sans", sans-serif;
+    font-weight: 600;
+    color: #555;
+}
+
+html body {
+    background-color: #fafbfc;
+    font-size: 5vh;
+    font-family: Montserrat, sans-serif;
+}
+
+/* Mobile Response */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Tablet Response */
+@media (min-width: 321) {
+    .container {
+        display: grid;
+        
+    }
+}
+
+/* Large Response */
+@media (min-width: 769) {
+    .container {
+        display: grid;
+        
+    }
+}
