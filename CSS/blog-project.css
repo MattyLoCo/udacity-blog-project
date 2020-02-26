@@ -34,18 +34,21 @@ html body {
     flex-wrap: wrap;
 }
 
-/* Tablet Response */
-@media (min-width: 321) {
+/* Tablet */
+@media (min-width: 321px) and (max-width: 768px) {
     .container {
         display: grid;
-        
+        grid-template-columns: 30% 40% 30%;
+        grid-template-rows: 10% 12% 20% 8% 5% 40% 5%;
+
     }
 }
 
-/* Large Response */
-@media (min-width: 769) {
+/* Desktop Response */
+@media (min-width: 769px) {
     .container {
         display: grid;
-        
+        grid-template-columns: 30% 40% 30%;
+        grid-template-rows: 10% 15% 8% 10% 50% 7%;
     }
 }
