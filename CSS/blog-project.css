@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-  }
+}
 
 h1 { 
     font-size: 10vh;
@@ -35,11 +35,13 @@ html body {
 }
 
 .bio {
-
+    font-style: italic;
+    color: #555;
 }
 
 .portrait {
-
+    background-image: url("/Users/matthewlopez1/Desktop/Programming/Front\ End/Udacity\ Blog\ Project/images/IMG_0125.jpeg");
+    border-radius: 50%;
 }
 
 .subscribe-form {
@@ -61,6 +63,11 @@ html body {
         grid-template-columns: 30% 40% 30%;
         grid-template-rows: 10% 12% 20% 8% 5% 40% 5%;
     }
+
+    ul.navbar li {
+        float: right;
+    }
+
     .bio {
 
     }
@@ -89,6 +96,11 @@ html body {
         grid-template-columns: 30% 40% 30%;
         grid-template-rows: 10% 15% 8% 10% 50% 7%;
     }
+
+    ul.navbar li {
+        float: right;
+    }
+
     .bio {
 
     }
