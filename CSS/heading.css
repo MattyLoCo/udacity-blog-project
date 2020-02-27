@@ -19,6 +19,9 @@
     font-weight: 600;
     color: #555;
     text-align: right;
+    position: fixed;
+    top: 0;
+    width: 100%; 
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     
@@ -35,11 +38,11 @@
     width: 100%;        
 }
 
-.navbar li {
-    float: right;
+.navbar ul li {
+    float: none;
   }
 
-.navbar li a {
+.navbar ul li a {
     display: block;
     color: #555;
     text-align: center;
@@ -47,6 +50,6 @@
     text-decoration: none;
   }  
 
-.navbar li a:hover {
+.navbar ul li a:hover {
     color: #79c7d6;
   }  

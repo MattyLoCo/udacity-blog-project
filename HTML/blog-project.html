@@ -16,11 +16,13 @@
         <title>BeHuman Resources Blog</title>
 
         <link rel="stylesheet" 
-            href="CSS/blog-project.css">
+            href="/Users/matthewlopez1/Desktop/Programming/Front\ End/Udacity\ Blog\ Project/CSS/blog-project.css">
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Arimo|Montserrat|Mukta+Vaani:600|Open+Sans:300,400,600&display=swap">            
         <link rel="stylesheet"
-            href="CSS/heading.css">
+            href="/Users/matthewlopez1/Desktop/Programming/Front\ End/Udacity\ Blog\ Project/CSS/heading.css">
+        <link rel="stylesheet"
+            href="Users/matthewlopez1/Desktop/Programming/Front\ End/Udacity\ Blog\ Project/CSS/subscribe-form.css">    
     </head>
 
     <body>
@@ -38,13 +40,54 @@
                     </ul>
                 </div>        
             </header>    
+            <div class="portrait"></div>
             <section class="bio">
-                <div class="portrait"></div>
                 <p>
-
+                    Matt Lopez is a recruiting and hiring expert
+                    who assists candidates make the best impression
+                    and land the job they're interviewing for. With 
+                    6 years experience, he has the most recent 
+                    talent acquisition skills and trends to offer.
                 </p>
             </section>    
             <section class="subscribe-form">
+                <h2>Subscribe Below for Regular Content</h2>
+                
+                <button onclick="document.getElementById('id01').style.display='block'" 
+                    style="width:auto;">Sign Up</button>
+
+                <div id="id01" class="modal">
+
+                    <span onclick="document.getElementById('id01').style.display='none'" 
+                        class="close" 
+                        title="Close Modal">&times;
+                    </span>
+
+                    <form class="modal-content" action="/action_page.php">
+
+                        <div class="container">
+                            <h1>Subscribe</h1>
+                            <h2>Fill in this form to get regular interview tips</h2>                        
+                            <hr>
+
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Your Name" name="name" required>
+                    
+                            <label for="email"><b>Email</b></label>
+                            <input type="email" placeholder="Your Email" name="email" required>
+                            
+                            <div class="clearfix">
+                                <button type="button" 
+                                    onclick="document.getElementById('id01').style.display='none'" 
+                                    class="cancelbtn">Cancel</button>
+                                <button type="submit" 
+                                    class="signupbtn">Sign Up
+                                </button>
+                            </div>
+                      
+                        </div>
+                    </form>
+                </div>
 
             </section>
             <div class="spacer"></div>  
@@ -56,7 +99,17 @@
 
                 </div>    
             </footer>                    
-        </section>    
-    </body>
+        </section>   
 
+        <script>
+            // Modal Functionality
+            var modal = document.getElementById('id01');
+            
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        </script>
+    </body>
 </html>    

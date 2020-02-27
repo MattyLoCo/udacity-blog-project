@@ -4,7 +4,7 @@
 
 h1 { 
     font-size: 10vh;
-    font-family: Arimo, Helvetica;
+    font-family: "Arimo", Helvetica;
     color: #FF8369;
 }
 
@@ -29,33 +29,40 @@ html body {
 }
 
 /* Mobile Response */
-.container {
-    display: flex;
-    flex-wrap: wrap;
+@media screen and (max-width: 320px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bio {
+        font-style: italic;
+        color: #555;
+        text-align: center;
+    }
+
+    .portrait {
+        background-image: url("/Users/matthewlopez1/Desktop/Programming/Front\ End/Udacity\ Blog\ Project/images/IMG_0125.jpeg");
+        border-radius: 50%;
+    }
+
+    /* Subscribe Form */
+    .subscribe-form {
+        text-align: center;
+    }
+    .cancelbtn, 
+    .signupbtn {
+        width: 100%;
+    }
+
+    .spacer {
+
+    }
+
+    .footer {
+
+    }
 }
-
-.bio {
-    font-style: italic;
-    color: #555;
-}
-
-.portrait {
-    background-image: url("/Users/matthewlopez1/Desktop/Programming/Front\ End/Udacity\ Blog\ Project/images/IMG_0125.jpeg");
-    border-radius: 50%;
-}
-
-.subscribe-form {
-
-}
-
-.spacer {
-
-}
-
-.footer {
-
-}
-
 /* Tablet */
 @media (min-width: 321px) and (max-width: 768px) {
     .container {
@@ -71,19 +78,28 @@ html body {
     .portrait {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
+        justify-self: center;
+        align-self: center;
     }
 
     .bio {
         font-style: italic;
         color: #555;
+        text-align: center;
         grid-column: 1 / 4;
         grid-row: 3 / 4;
+        justify-self: center;
+        align-self: center;
     }
     
+    /* .Subscribe Form */
     .subscribe-form {
-    
+        text-align: center;
+        grid-column: 1 /4;
+        grid-row: 4 / 5;   
+        justify-self: center;     
     }
-    
+
     .spacer {
     
     }
@@ -108,17 +124,25 @@ html body {
     .portrait {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
+        justify-self: center;
+        align-self: center;
     }
     
     .bio {
         font-style: italic;
         color: #555;
+        text-align: center;
         grid-column: 2 / 4;
         grid-row: 2/ 3;
+        justify-self: center;
+        align-self: center;
     }
     
     .subscribe-form {
-    
+        text-align: center;
+        grid-column: 1 /4;
+        grid-row: 3 / 4;
+        justify-self: center;  
     }
     
     .spacer {

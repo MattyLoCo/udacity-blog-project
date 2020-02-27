@@ -35,3 +35,8 @@ h3 {
 
 <!-- Backgrounds -->
 -White, #fafbfc
+
+<!-- Borders -->
+
+border-radius: 25%
+
