@@ -67,13 +67,17 @@ html body {
     ul.navbar li {
         float: right;
     }
-
-    .bio {
-
-    }
     
     .portrait {
-    
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .bio {
+        font-style: italic;
+        color: #555;
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
     }
     
     .subscribe-form {
@@ -101,12 +105,16 @@ html body {
         float: right;
     }
 
-    .bio {
-
+    .portrait {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
     }
     
-    .portrait {
-    
+    .bio {
+        font-style: italic;
+        color: #555;
+        grid-column: 2 / 4;
+        grid-row: 2/ 3;
     }
     
     .subscribe-form {
