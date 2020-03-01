@@ -56,13 +56,15 @@ html body {
     }
 
     .spacer {
-
+        height: 20px;
+        width: 100%;
     }
 
     .footer {
 
     }
 }
+
 /* Tablet */
 @media (min-width: 321px) and (max-width: 768px) {
     .container {
@@ -101,11 +103,18 @@ html body {
     }
 
     .spacer {
-    
+        grid-column: 1 / 4;
+        grid-row: 5 / 6;
+    }
+
+    . main {
+        grid-column: 1 / 4;
+        grid-row: 6 / 7;
     }
     
     .footer {
-        
+        grid-column: 1 / 4;
+        grid-row: 7 / 8;
     }    
 }
 
@@ -145,12 +154,19 @@ html body {
         grid-row: 3 / 4;
         justify-self: center;  
     }
+
+    . main {
+        grid-column: 1 / 4;
+        grid-row: 5 / 6;
+    }
     
     .spacer {
-    
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
     }
     
     .footer {
-        
+        grid-column: 1 / 4;
+        grid-row: 6 / 7;
     }  
 }
