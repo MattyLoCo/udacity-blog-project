@@ -29,7 +29,7 @@ html body {
 }
 
 /* Mobile Response */
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -42,12 +42,12 @@ html body {
     }
 
     .portrait {
-        background-image: url("/Users/matthewlopez1/Desktop/Programming/Front\ End/Udacity\ Blog\ Project/images/IMG_0125.jpeg");
+        background-image: url("/Users/matthewlopez1/Desktop/Programming/Front End/Udacity Blog Project/images/IMG_0125.jpeg");
         border-radius: 50%;
     }
 
     /* Subscribe Form */
-    .subscribe-form {
+    /* .subscribe-form {
         text-align: center;
     }
     .cancelbtn, 
@@ -63,10 +63,10 @@ html body {
     .footer {
 
     }
-}
+} */ 
 
 /* Tablet */
-@media (min-width: 321px) and (max-width: 768px) {
+/* @media (min-width: 321px) and (max-width: 768px) {
     .container {
         display: grid;
         grid-template-columns: 30% 40% 30%;
@@ -78,6 +78,7 @@ html body {
     }
     
     .portrait {
+        background-image: url("/Users/matthewlopez1/Desktop/Programming/Front End/Udacity Blog Project/images/IMG_0125.jpeg");
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         justify-self: center;
@@ -95,7 +96,7 @@ html body {
     }
     
     /* .Subscribe Form */
-    .subscribe-form {
+    /* .subscribe-form {
         text-align: center;
         grid-column: 1 /4;
         grid-row: 4 / 5;   
@@ -116,24 +117,45 @@ html body {
         grid-column: 1 / 4;
         grid-row: 7 / 8;
     }    
-}
+} */ 
 
 /* Desktop Response */
 @media (min-width: 769px) {
     .container {
-        display: grid;
+        display: grid;        
         grid-template-columns: 30% 40% 30%;
-        grid-template-rows: 10% 15% 8% 10% 50% 7%;
+        grid-template-rows: 4em 15% 10% 1fr 900px 7%;
+        grid-template-areas: 
+        
+            "hd hd nv"
+            "por bio bio"
+            "sub sub sub"
+            "sp sp sp"
+            "main main main"
+            "ft ft ft";
+        grid-gap: 5px; 
+        grid-auto-flow: row;   
     }
 
-    ul.navbar li {
+    .heading {
+    grid-area: hd;
+    }
+
+    nav {
+        grid-area: nv;
+    }
+
+    nav > ul > li {
         float: right;
     }
 
-    .portrait {
+    .portrait /*::after */{
+        /* content: ""; */
+        background-image: url("/Users/matthewlopez1/Desktop/Programming/Front End/Udacity Blog Project/images/IMG_0125.jpeg");
         background-position: center;
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
+        grid-area: por;
+        /* grid-column: 1 / 2;
+        grid-row: 2 / 3; */
         justify-self: center;
         align-self: center;
     }
@@ -142,31 +164,36 @@ html body {
         font-style: italic;
         color: #555;
         text-align: center;
-        grid-column: 2 / 4;
-        grid-row: 2/ 3;
+        grid-area: bio;
+        /* grid-column: 2 / 4;
+        grid-row: 2/ 3; */
         justify-self: center;
         align-self: center;
     }
     
     .subscribe-form {
         text-align: center;
-        grid-column: 1 /4;
-        grid-row: 3 / 4;
+        grid-area: sub;
+        /* grid-column: 1 /4;
+        grid-row: 3 / 4; */
         justify-self: center;  
     }
 
-    . main {
-        grid-column: 1 / 4;
-        grid-row: 5 / 6;
+    .main {
+        grid-area: main;
+        /* grid-column: 1 / 4;
+        grid-row: 5 / 6; */
     }
     
     .spacer {
-        grid-column: 1 / 4;
-        grid-row: 4 / 5;
+        grid-area: sp;
+        /* grid-column: 1 / 4;
+        grid-row: 4 / 5; */
     }
     
     .footer {
-        grid-column: 1 / 4;
-        grid-row: 6 / 7;
+        grid-area: ft;
+        /* grid-column: 1 / 4;
+        grid-row: 6 / 7; */
     }  
 }
