@@ -123,28 +123,28 @@ html body {
 @media (min-width: 769px) {
     .container {
         display: grid;        
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 30% 40% 30%;
         grid-template-rows: 4em 15% 10% 1fr 900px 7%;
         grid-template-areas: 
         
-            'hd hd nv'
-            'por bio bio'
-            'sub sub sub'
-            'sp sp sp'
-            'main main main'
-            'ft ft ft';
-
+            "hd hd nv"
+            "por bio bio"
+            "sub sub sub"
+            "sp sp sp"
+            "main main main"
+            "ft ft ft";
         grid-gap: 5px; 
-        grid-auto-flow: row;   
+        grid-auto-flow: row;
     }
 
     .heading {
-    grid-area: hd;
-    } */
+        grid-area: hd;
+        position: absolute;
+    }
 
     nav {
         grid-area: nv;
-    } 
+    }
 
     nav > ul > li {
         float: right;
@@ -152,7 +152,7 @@ html body {
 
     .portrait /*::after */{
         /* content: ""; */
-        background-image: url("/Users/matthewlopez1/Desktop/Programming/Front End/Udacity Blog Project/images/IMG_0125.jpeg");
+        background-image: url("../images/IMG_0125.jpeg");
         background-position: center;
         grid-area: por;
         /* grid-column: 1 / 2;
@@ -182,6 +182,11 @@ html body {
 
     .main {
         grid-area: main;
+        display: flex;
+        flex-flow: wrap;
+        list-style: none;
+        justify-content: space-around;
+        align-content: flex-end;
         /* grid-column: 1 / 4;
         grid-row: 5 / 6; */
     }
