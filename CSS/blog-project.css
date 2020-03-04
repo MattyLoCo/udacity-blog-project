@@ -9,7 +9,7 @@ h1 {
 }
 
 h2 {
-    font-size: 7vh;
+    font-size: 30px;
     font-family: "Mukta Vaani", sans-serif;
     font-weight: 600;
     color: #79C7D6;
@@ -24,26 +24,15 @@ h3 {
 
 html body {
     background-color: #fafbfc;
-    font-size: 5vh;
+    font-size: 20px;
     font-family: Montserrat, sans-serif;
 }
 
 /* Mobile Response */
 /* @media screen and (max-width: 320px) {
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-    }
 
-    .bio {
-        font-style: italic;
-        color: #555;
-        text-align: center;
-    }
-
-    .portrait {
-        background-image: url("/Users/matthewlopez1/Desktop/Programming/Front End/Udacity Blog Project/images/IMG_0125.jpeg");
-        border-radius: 50%;
+    .header {
+        justify-content: space-around;
     }
 
     /* Subscribe Form */
@@ -55,14 +44,6 @@ html body {
         width: 100%;
     }
 
-    .spacer {
-        height: 20px;
-        width: 100%;
-    }
-
-    .footer {
-
-    }
 } */ 
 
 /* Tablet */
@@ -123,11 +104,11 @@ html body {
 @media (min-width: 769px) {
     .container {
         display: grid;        
-        grid-template-columns: 30% 40% 30%;
+        grid-template-columns: 40% 30% 30%;
         grid-template-rows: 4em 15% 10% 1fr 900px 7%;
         grid-template-areas: 
         
-            "hd hd nv"
+            "hd hd hd"
             "por bio bio"
             "sub sub sub"
             "sp sp sp"
@@ -137,26 +118,25 @@ html body {
         grid-auto-flow: row;
     }
 
-    .heading {
+    .header {
         grid-area: hd;
-        position: absolute;
+        position: static;
     }
 
-    nav {
+    /* nav {
         grid-area: nv;
-    }
+    } */
 
     nav > ul > li {
         float: right;
     }
 
-    .portrait /*::after */{
-        /* content: ""; */
-        background-image: url("../images/IMG_0125.jpeg");
-        background-position: center;
+    .portrait {
+        /* background-position: center; */
+        width: 50px;
+        height: 50px;
+        z-index: -1;
         grid-area: por;
-        /* grid-column: 1 / 2;
-        grid-row: 2 / 3; */
         justify-self: center;
         align-self: center;
     }
@@ -166,8 +146,6 @@ html body {
         color: #555;
         text-align: center;
         grid-area: bio;
-        /* grid-column: 2 / 4;
-        grid-row: 2/ 3; */
         justify-self: center;
         align-self: center;
     }
@@ -175,8 +153,6 @@ html body {
     .subscribe-form {
         text-align: center;
         grid-area: sub;
-        /* grid-column: 1 /4;
-        grid-row: 3 / 4; */
         justify-self: center;  
     }
 
@@ -187,19 +163,13 @@ html body {
         list-style: none;
         justify-content: space-around;
         align-content: flex-end;
-        /* grid-column: 1 / 4;
-        grid-row: 5 / 6; */
     }
     
     .spacer {
         grid-area: sp;
-        /* grid-column: 1 / 4;
-        grid-row: 4 / 5; */
     }
     
     .footer {
         grid-area: ft;
-        /* grid-column: 1 / 4;
-        grid-row: 6 / 7; */
     }  
 }
