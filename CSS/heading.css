@@ -1,5 +1,7 @@
 .heading { 
+    position: fixed;
     display: block;
+    grid-area: hd;
     background-color: #fafbfc;
     font-size: 40px;
     font-family: "Arimo", Helvetica;
@@ -13,7 +15,9 @@
 
 nav {
     /* float: right; */
+    position: fixed;
     list-style: none;
+    grid-area: nv;
     background-color: #fafbfc;
     font-size: 25px;
     font-family: "Open sans", sans-serif;

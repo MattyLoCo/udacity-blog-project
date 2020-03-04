@@ -123,27 +123,28 @@ html body {
 @media (min-width: 769px) {
     .container {
         display: grid;        
-        grid-template-columns: 30% 40% 30%;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 4em 15% 10% 1fr 900px 7%;
         grid-template-areas: 
         
-            "hd hd nv"
-            "por bio bio"
-            "sub sub sub"
-            "sp sp sp"
-            "main main main"
-            "ft ft ft";
+            'hd hd nv'
+            'por bio bio'
+            'sub sub sub'
+            'sp sp sp'
+            'main main main'
+            'ft ft ft';
+
         grid-gap: 5px; 
         grid-auto-flow: row;   
     }
 
     .heading {
     grid-area: hd;
-    }
+    } */
 
     nav {
         grid-area: nv;
-    }
+    } 
 
     nav > ul > li {
         float: right;
