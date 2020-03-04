@@ -1,157 +1,162 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" 
-            content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-            content="interview skills blog">        
-        <meta name="keywords" 
-            content="blog, recruiter, interview skills">    
-        <meta name="author"
-            content="matthew lopez">    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="interview skills blog">
+    <meta name="keywords"
+          content="blog, recruiter, interview skills">
+    <meta name="author"
+          content="matthew lopez">
 
-        <title>BeHuman Resources Blog</title>
+    <title>BeHuman Resources Blog</title>
 
-        <link rel="stylesheet" 
-            href="../CSS/blog-project.css">
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Arimo|Montserrat|Mukta+Vaani:600|Open+Sans:300,400,600&display=swap">            
-        <link rel="stylesheet"
-            href="../CSS/heading.css">
-        <link rel="stylesheet"
-            href="../CSS/subscribe-form.css">    
-        <link rel="stylsheet"
-            href="../CSS/main.css">    
-        <link rel="stylesheet"
-            href="../CSS/blog-article.css">       
-    </head>
+    <link rel="stylesheet"
+          href="../CSS/blog-project.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Arimo|Montserrat|Mukta+Vaani:600|Open+Sans:300,400,600&display=swap">
+    <link rel="stylesheet"
+          href="../CSS/heading.css">
+    <link rel="stylesheet"
+          href="../CSS/subscribe-form.css">
+    <link rel="stylsheet"
+          href="../CSS/main.css">
+    <link rel="stylesheet"
+          href="../CSS/blog-article.css">
+</head>
 
-    <body>
-        <section class="container">
-            <header>    
-                <div class="heading">
-                    BeHuman Resources
-                </div>
-            </header>     
-            <nav>
-                <ul>
-                    <li><a href="default.asp">Home</a></li>
-                    <li><a href="HTML/blog-article.html">New</a></li>
-                    <li><a href=".bio">About</a></li>
-                    <li><a href=".subscribe-form">Contact</a></li>
-                </ul>
-            <nav>                       
-            <div class="portrait"></div>
-            <section class="bio">
-                <p>
-                    Matt Lopez is a recruiting and hiring expert
-                    who assists candidates make the best impression
-                    and land the job they're interviewing for. With 
-                    6 years experience, he has the most recent 
-                    talent acquisition skills and trends to offer.
-                </p>
-            </section>    
-            <section class="subscribe-form">
-                <h2>Subscribe Below for Regular Content</h2>
-                
-                <button onclick="document.getElementById('id01').style.display='block'" 
-                    style="width:auto;">Sign Up</button>
+<body>
+<section class="container">
+    <header>
+        <div class="heading">
+            BeHuman Resources
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="blog-article.html">New</a></li>
+            <li><a href=".bio">About</a></li>
+            <li><a href=".subscribe-form">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="portrait">
+        <img src="../images/IMG_0125.jpeg" alt="handsome">
+    </div>
+    <section class="bio">
+        <p>
+            Matt Lopez is a recruiting and hiring expert
+            who assists candidates make the best impression
+            and land the job they're interviewing for. With
+            6 years experience, he has the most recent
+            talent acquisition skills and trends to offer.
+        </p>
+    </section>
+    <section class="subscribe-form">
+        <h2>Subscribe Below for Regular Content</h2>
 
-                <div id="id01" class="modal">
+        <button onclick="document.getElementById('id01').style.display='block'"
+                style="width:auto;">Sign Up
+        </button>
 
-                    <span onclick="document.getElementById('id01').style.display='none'" 
-                        class="close" 
-                        title="Close Modal">&times;
+        <div id="id01" class="modal">
+
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                          class="close"
+                          title="Close Modal">&times;
                     </span>
 
-                    <form class="modal-content" action="/action_page.php">
+            <form class="modal-content" action="/action_page.php">
 
-                        <div class="container">
-                            <h1>Subscribe</h1>
-                            <h2>Fill in this form to get regular interview tips</h2>                        
-                            <hr>
+                <div class="container">
+                    <h1>Subscribe</h1>
+                    <h2>Fill in this form to get regular interview tips</h2>
+                    <hr>
 
-                            <label for="name"><b>Name</b></label>
-                            <input type="text" placeholder="Your Name" name="name" required>
-                    
-                            <label for="email"><b>Email</b></label>
-                            <input type="email" placeholder="Your Email" name="email" required>
-                            
-                            <div class="clearfix">
-                                <button type="button" 
-                                    onclick="document.getElementById('id01').style.display='none'" 
-                                    class="cancelbtn">Cancel</button>
-                                <button type="submit" 
-                                    class="signupbtn">Sign Up
-                                </button>
-                            </div>
-                      
-                        </div>
-                    </form>
+                    <label for="name">
+                        <b>Name</b>
+                        <input type="text" placeholder="Your Name" name="name" required/>
+                    </label>
+
+                    <label for="email">
+                        <b>Email</b>
+                        <input type="email" placeholder="Your Email" name="email" required/>
+                    </label>
+
+                    <div class="clearfix">
+                        <button type="button"
+                                onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Cancel
+                        </button>
+                        <button type="submit"
+                                class="signupbtn">Sign Up
+                        </button>
+                    </div>
                 </div>
-            </section>
+            </form>
+        </div>
+    </section>
 
-            <div class="spacer"></div>  
+    <div class="spacer"></div>
 
-            <section class="main">   
-                <a href="HTML/blog-article.html">        
-                    <div class="card">
-                        <img src="img_avatar.png" alt="Avatar">
-                        <div class="card-content">
-                            <h3>Interviewing Your Interviewer</h3>
+    <section class="main">
+        <a href="blog-article.html">
+            <div class="card">
+                <img src="img_avatar.png" alt="Avatar">
+                <div class="card-content">
+                    <h3>Interviewing Your Interviewer</h3>
 
-                            <p>Learn 7 strategies to level the playing field and 
-                                co-create an interivew...
-                            </p>
-                        </div>
-                    </div>   
-                </a>
-                <a href="HTML/blog-article-2.html">
-                    <div class="card">
-                        <img src="img_avatar.png" alt="Avatar">
-                        <div class="card-content">
-                            <h3>Hard Questions You Should Be Asking</h3>
+                    <p>Learn 7 strategies to level the playing field and
+                        co-create an interivew...
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="blog-article-2.html">
+            <div class="card">
+                <img src="img_avatar.png" alt="Avatar">
+                <div class="card-content">
+                    <h3>Hard Questions You Should Be Asking</h3>
 
-                            <p>Ask these 5 questions of your interviewer and 
-                                find the right fit...
-                            </p>
-                        </div>
-                    </div>   
-                </a>
-                <a href="HTML/blog-article-3.html">
-                    <div class="card">
-                        <img src="img_avatar.png" alt="Avatar">
-                        <div class="card-content">
-                            <h3>The Secret Life of Recruiters</h3>
+                    <p>Ask these 5 questions of your interviewer and
+                        find the right fit...
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="blog-article-3.html">
+            <div class="card">
+                <img src="img_avatar.png" alt="Avatar">
+                <div class="card-content">
+                    <h3>The Secret Life of Recruiters</h3>
 
-                            <p>Find out how they spend their days
-                                and what they're really thinking...
-                            </p>
-                        </div>
-                    </div>   
-                </a>                     
-            </section>                  
-            <footer>
-                <div class="footer">
-                    
-                </div>    
-            </footer>                    
-        </section>   
+                    <p>Find out how they spend their days
+                        and what they're really thinking...
+                    </p>
+                </div>
+            </div>
+        </a>
+    </section>
+    <section class="footer">
+        <p>Hey Sexy</p>
+    </section>
+</section>
 
-        <script>
-            // Modal Functionality
-            var modal = document.getElementById('id01');
-            
-            window.onclick = function(event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            }
+<script>
+    // Modal Functionality
+    var modal = document.getElementById('id01');
 
-            // Card as Link Functionality
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
 
-        </script>
-    </body>
+    // Card as Link Functionality
+
+</script>
+</body>
 </html>    
