@@ -33,7 +33,7 @@ html body {
 
     .header {
         justify-content: space-around;
-    }
+    } */
 
     /* Subscribe Form */
     /* .subscribe-form {
@@ -44,7 +44,7 @@ html body {
         width: 100%;
     }
 
-} */ 
+}
 
 /* Tablet */
 /* @media (min-width: 321px) and (max-width: 768px) {
@@ -123,29 +123,25 @@ html body {
         position: static;
     }
 
-    /* nav {
-        grid-area: nv;
-    } */
-
     nav > ul > li {
         float: right;
     }
 
     .portrait {
-        /* background-position: center; */
-        width: 50px;
-        height: 50px;
-        z-index: -1;
+        display: flex;
         grid-area: por;
-        justify-self: center;
-        align-self: center;
+        margin: auto;        
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;        
+        z-index: -1;
     }
     
     .bio {
+        grid-area: bio;
         font-style: italic;
         color: #555;
-        text-align: center;
-        grid-area: bio;
+        text-align: center;        
         justify-self: center;
         align-self: center;
     }
