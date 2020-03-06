@@ -45,13 +45,6 @@ html body {
     nav > ul > li {
         float: right;
     }
-
-    .portrait {
-        height: 220px;
-        width: 220px;
-        border-radius: 50%;    
-        text-align: center;    
-    }
     
     /* Subscribe Form */
     .subscribe-form {
@@ -89,7 +82,7 @@ html body {
         
             "hd hd hd"
             "ttl ttl ttl"
-            "main main main"
+            ". main ."
             "ft ft ft";
         grid-gap: 5px; 
         grid-auto-flow: column;
@@ -102,25 +95,6 @@ html body {
 
     nav > ul > li {
         float: right;
-    }
-
-    .portrait {
-        display: flex;
-        grid-area: por;
-        margin: auto;        
-        height: 220px;
-        width: 220px;
-        border-radius: 50%;        
-        z-index: -1;
-    }
-    
-    .bio {
-        grid-area: bio;
-        font-style: italic;
-        color: #555;
-        text-align: center;        
-        justify-self: center;
-        align-self: center;
     }
     
     .subscribe-form {
