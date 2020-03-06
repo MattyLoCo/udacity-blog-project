@@ -6,12 +6,10 @@
 }
 
 .heading { 
-    /* display: block; */
     background-color: #fafbfc;
     font-size: 40px;
     font-family: "Arimo", Helvetica;
-    color: #FF8369; 
-    /* margin: 0 0; */
+    color: #FF8369;     
 }
 
 nav {

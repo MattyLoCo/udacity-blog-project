@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 { 
+    font-size: 10vh;
+    font-family: "Arimo", Helvetica;
+    color: #FF8369;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "Mukta Vaani", sans-serif;
+    font-weight: 600;
+    color: #79C7D6;
+}
+
+h3 {
+    font-size: 5vh;
+    font-family: "Open sans", sans-serif;
+    font-weight: 600;
+    color: #555;
+}
+
+html body {
+    margin: 0 auto;
+    background-color: #fafbfc;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* .header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+    } */
+
+    nav > ul > li {
+        float: right;
+    }
+
+    .portrait {
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;    
+        text-align: center;    
+    }
+    
+    /* Subscribe Form */
+    .subscribe-form {
+        /* display: flex;
+        flex-flow: wrap;
+        margin: auto; */
+        text-align: center;
+    }
+
+    .cancelbtn, 
+    .signupbtn {
+        width: 100%;
+    }
+
+    .main {
+        display: flex;
+        flex-flow: wrap;
+        list-style: none;
+        justify-content: space-around;
+        align-content: flex-end;
+    }
+    
+    .footer {
+        margin: auto;
+    }     
+}  
+
+/* Desktop Response */
+@media (min-width: 1024px) {
+    .container {
+        display: grid;        
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 4em 100px 500px 7%;
+        grid-template-areas: 
+        
+            "hd hd hd"
+            "ttl ttl ttl"
+            "main main main"
+            "ft ft ft";
+        grid-gap: 5px; 
+        grid-auto-flow: column;
+    }
+
+    .header {
+        grid-area: hd;
+        position: static;
+    }
+
+    nav > ul > li {
+        float: right;
+    }
+
+    .portrait {
+        display: flex;
+        grid-area: por;
+        margin: auto;        
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;        
+        z-index: -1;
+    }
+    
+    .bio {
+        grid-area: bio;
+        font-style: italic;
+        color: #555;
+        text-align: center;        
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .subscribe-form {
+        text-align: center;
+        grid-area: sub;
+        justify-self: center;  
+    }
+
+    .main {
+        grid-area: main;
+        display: flex;
+        flex-flow: wrap;
+        list-style: none;
+        justify-content: space-around;
+        align-content: flex-end;
+    }
+
+    .footer {
+        grid-area: ft;
+        margin: auto;
+    }  
+}
