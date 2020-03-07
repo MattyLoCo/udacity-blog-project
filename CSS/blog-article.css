@@ -27,6 +27,7 @@ html body {
     background-color: #fafbfc;
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
+    text-align: justify;
 }
 
 @media screen and (max-width: 1023px) {
@@ -35,12 +36,14 @@ html body {
         flex-wrap: wrap;
     }
 
-    /* .header {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: space-around;
-    } */
+    .header {
+        align-content: center;
+    }
+
+    article > h1 {
+        grid-area: ttl;
+        text-align: center;
+    }
 
     nav > ul > li {
         float: right;
@@ -62,14 +65,19 @@ html body {
     .main {
         display: flex;
         flex-flow: wrap;
-        list-style: none;
-        justify-content: space-around;
-        align-content: flex-end;
+        margin: 0 10%;
     }
     
     .footer {
+        display: flex;
+        flex-wrap: nowrap;
         margin: auto;
-    }     
+        text-align: center;
+    }
+
+    .footer > p > span {
+        padding: 10px 10px;
+    }
 }  
 
 /* Desktop Response */
@@ -77,15 +85,16 @@ html body {
     .container {
         display: grid;        
         grid-template-columns: 20% 60% 20%;
-        grid-template-rows: 4em 100px 500px 7%;
+        grid-template-rows: 2em 50px 1fr 10%;
         grid-template-areas: 
         
             "hd hd hd"
             "ttl ttl ttl"
             ". main ."
-            "ft ft ft";
+            ". ft .";
+
         grid-gap: 5px; 
-        grid-auto-flow: column;
+        grid-auto-flow: row;
     }
 
     .header {
@@ -93,27 +102,38 @@ html body {
         position: static;
     }
 
+
     nav > ul > li {
         float: right;
     }
     
-    .subscribe-form {
+    article > h1 {
+        grid-area: ttl;
         text-align: center;
-        grid-area: sub;
-        justify-self: center;  
     }
 
     .main {
         grid-area: main;
         display: flex;
         flex-flow: wrap;
-        list-style: none;
-        justify-content: space-around;
-        align-content: flex-end;
+    }
+
+
+    .subscribe-form {
+        text-align: center;
+        grid-area: sub;
+        justify-self: center;  
     }
 
     .footer {
         grid-area: ft;
         margin: auto;
+        text-align: center;
     }  
+
+    .footer > 
+    p,
+    span {
+        padding: 5px 10px;
+    }
 }

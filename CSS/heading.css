@@ -1,6 +1,7 @@
 .header {
     display: flex;
     flex-wrap: wrap;
+    position: static;
     justify-content: space-between;
     align-content: bottom;
 }
@@ -23,7 +24,7 @@ nav {
 }
 
 nav > ul {
-    float: inline-end;
+    float: none;
     list-style-type: none;
     white-space: nowrap;
     margin: 0 0;

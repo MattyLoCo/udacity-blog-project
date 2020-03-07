@@ -9,7 +9,7 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 25px;
     font-family: "Mukta Vaani", sans-serif;
     font-weight: 600;
     color: #79C7D6;
@@ -142,7 +142,7 @@ html body {
             "main main main"
             "ft ft ft";
         grid-gap: 5px; 
-        grid-auto-flow: column;
+        /* grid-auto-flow: column; */
     }
 
     .header {
@@ -151,7 +151,7 @@ html body {
     }
 
     nav > ul > li {
-        float: right;
+        float: ;
     }
 
     .portrait {
@@ -161,7 +161,6 @@ html body {
         height: 220px;
         width: 220px;
         border-radius: 50%;        
-        z-index: -1;
     }
     
     .bio {
