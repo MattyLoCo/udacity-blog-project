@@ -29,7 +29,7 @@ html body {
     font-family: "Montserrat", sans-serif;
     text-align: justify;
 }
-
+ /* Mobile & Tablet Responsive */
 @media screen and (max-width: 1023px) {
     .container {
         display: flex;
@@ -63,20 +63,38 @@ html body {
     }
 
     .main {
-        display: flex;
-        flex-flow: wrap;
-        margin: 0 10%;
+        margin: 0px 10%;
     }
     
-    .footer {
-        display: flex;
-        flex-wrap: nowrap;
-        margin: auto;
-        text-align: center;
+    .footer > hr {
+        width: 40%;
+        border: 2px solid #fac232; 
     }
 
-    .footer > p > span {
-        padding: 10px 10px;
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;      
+    }
+
+    .footer > p {
+        display: flex;
+        flex-flow: column wrap; 
+        margin: auto;
+        text-align: center;        
+        width: 100%;
+        margin: 5px;
+        padding: 0px 10px;
+    } 
+
+    a {
+        color: #79c7d6;        
+        text-decoration: none;
+        justify-content: center;
+    }
+
+    a:hover {
+        color: #ff8369;
     }
 }  
 
@@ -85,23 +103,21 @@ html body {
     .container {
         display: grid;        
         grid-template-columns: 20% 60% 20%;
-        grid-template-rows: 2em 50px 1fr 10%;
+        grid-template-rows: 2em 50px 1fr 70px;
         grid-template-areas: 
         
             "hd hd hd"
             "ttl ttl ttl"
             ". main ."
-            ". ft .";
+            "ft ft ft";
 
         grid-gap: 5px; 
-        grid-auto-flow: row;
     }
 
     .header {
         grid-area: hd;
         position: static;
     }
-
 
     nav > ul > li {
         float: right;
@@ -114,10 +130,7 @@ html body {
 
     .main {
         grid-area: main;
-        display: flex;
-        flex-flow: wrap;
     }
-
 
     .subscribe-form {
         text-align: center;
@@ -125,15 +138,30 @@ html body {
         justify-self: center;  
     }
 
+    hr {
+        border: 2px solid #fac232;
+        margin: 5% 40%;
+    }
+
     .footer {
         grid-area: ft;
+        display: flex;
+        flex-flow: column wrap; 
         margin: auto;
         text-align: center;
     }  
 
-    .footer > 
-    p,
-    span {
-        padding: 5px 10px;
+    .footer > p {       
+        margin: 10px auto;
+        padding: 0px;
+    }
+
+    a {
+        color: #79c7d6;        
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #ff8369;
     }
 }
