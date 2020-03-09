@@ -1,4 +1,4 @@
-.fa {
+.share {
   padding: 20px;
   font-size: 30px;
   width: 30px;
@@ -7,21 +7,21 @@
   border-radius: 50%;
 }
 
-.fa:hover {
+.share:hover {
   opacity: 0.7;
 }
 
-.fa-facebook {
+.share-facebook {
   background: #3b5998;
   color: white;
 }
 
-.fa-twitter {
+.share-twitter {
   background: #55acee;
   color: white;
 }
 
-.fa-linkedin {
+.share-linkedin {
   background: #007bb5;
   color: white;
 }
