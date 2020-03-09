@@ -36,13 +36,6 @@ html body {
         flex-wrap: wrap;
     }
 
-    /* .header {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: space-around;
-    } */
-
     nav > ul > li {
         float: right;
     }
@@ -52,6 +45,13 @@ html body {
         width: 220px;
         border-radius: 50%;    
         text-align: center;    
+    }
+
+    figcaption {
+        font-size: 10px;
+        font-style: italic;        
+        color: #555;
+        text-align: center;  
     }
     
     .bio {
