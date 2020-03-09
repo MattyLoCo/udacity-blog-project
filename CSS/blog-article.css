@@ -77,7 +77,7 @@ html body {
     justify-content: center;
   }
 
-  .footer > p {
+  .footer-fix {
     display: flex;
     flex-flow: column wrap;
     margin: auto;
@@ -85,6 +85,10 @@ html body {
     width: 100%;
     margin: 5px;
     padding: 0px 10px;
+  }
+
+  .footer-heading {
+    color: #555;
   }
 
   a {
@@ -150,9 +154,13 @@ html body {
     text-align: center;
   }
 
-  .footer > p {
+  .footer-fix {
     margin: 10px auto;
     padding: 0px;
+  }
+
+  .footer-heading {
+    color: #555;
   }
 
   a {
