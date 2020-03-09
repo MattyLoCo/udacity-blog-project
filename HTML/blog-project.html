@@ -1,156 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-          content="interview skills blog">
-    <meta name="keywords"
-          content="blog, recruiter, interview skills">
-    <meta name="author"
-          content="matthew lopez">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="interview skills blog" />
+    <meta name="keywords" content="blog, recruiter, interview skills" />
+    <meta name="author" content="matthew lopez" />
 
     <title>BeHuman Resources Blog</title>
 
-    <link rel="stylesheet"
-          href="../CSS/main.css">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Arimo|Montserrat|Mukta+Vaani:600|Open+Sans:300,400,600&display=swap">          
-</head>
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Arimo|Montserrat|Mukta+Vaani:600|Open+Sans:300,400,600&display=swap"
+    />
+  </head>
 
-<body>
-<section class="container">
-    <section class="header">
+  <body>
+    <section class="container">
+      <section class="header">
         <div class="heading">
-            <span class="headingfix">Be</span>Human Resources
+          <span class="headingfix">Be</span>Human Resources
         </div>
         <nav>
-            <ul>
-                <li><a href="../HTML/blog-project.html">Home</a></li>
-                <li><a href="../HTML/blog-article.html">New</a></li>
-                <li><a href=".bio">About</a></li>
-                <li><a href=".subscribe-form">Contact</a></li>
-            </ul>
+          <ul>
+            <li><a href="../HTML/blog-project.html">Home</a></li>
+            <li><a href="../HTML/blog-article.html">New</a></li>
+            <li><a href=".bio">About</a></li>
+            <li><a href=".subscribe-form">Contact</a></li>
+          </ul>
         </nav>
-    </section>
-    
-    <span>
-        <img class="portrait" src="../images/IMG_0125.jpeg" alt="portrait">
+      </section>
+
+      <span>
+        <img class="portrait" src="../images/IMG_0125.jpeg" alt="portrait" />
         <figcaption>Author Matthew Lopez</figcaption>
-    </span>
-    <section class="bio">
+      </span>
+      <section class="bio">
         <p>
-            Matt Lopez is a recruiting and hiring expert
-            who assists candidates make the best impression
-            and land the job they're interviewing for. With
-            6 years experience, he has the most recent
-            talent acquisition skills and trends to offer.
+          Matt Lopez is a recruiting and hiring expert who assists candidates
+          make the best impression and land the job they're interviewing for.
+          With 6 years experience, he has the most recent talent acquisition
+          skills and trends to offer.
         </p>
-    </section>
-    <section class="subscribe-form">
+      </section>
+      <section class="subscribe-form">
         <h2>Subscribe Below for Regular Content</h2>
 
-        <button onclick="document.getElementById('id01').style.display='block'"
-                style="width:auto;">Sign Up
+        <button
+          onclick="document.getElementById('id01').style.display='block'"
+          style="width:auto;"
+        >
+          Sign Up
         </button>
 
         <div id="id01" class="modal">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;
+          </span>
 
-                    <span onclick="document.getElementById('id01').style.display='none'"
-                          class="close"
-                          title="Close Modal">&times;
-                    </span>
+          <form class="modal-content" action="/action_page.php">
+            <div class="container">
+              <h1>Subscribe</h1>
+              <h2>Fill in this form to get regular interview tips</h2>
+              <hr />
 
-            <form class="modal-content" action="/action_page.php">
+              <label for="name">
+                <b>Name</b>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  name="name"
+                  required
+                />
+              </label>
 
-                <div class="container">
-                    <h1>Subscribe</h1>
-                    <h2>Fill in this form to get regular interview tips</h2>
-                    <hr>
+              <label for="email">
+                <b>Email</b>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  name="email"
+                  required
+                />
+              </label>
 
-                    <label for="name">
-                        <b>Name</b>
-                        <input type="text" placeholder="Your Name" name="name" required/>
-                    </label>
-
-                    <label for="email">
-                        <b>Email</b>
-                        <input type="email" placeholder="Your Email" name="email" required/>
-                    </label>
-
-                    <div class="clearfix">
-                        <button type="button"
-                                onclick="document.getElementById('id01').style.display='none'"
-                                class="cancelbtn">Cancel
-                        </button>
-                        <button type="submit"
-                                class="signupbtn">Sign Up
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <div class="spacer"></div>
-
-    <section class="main">
-        <a href="../HTML/blog-article.html">
-            <div class="card">
-                <img src="../images/interview.jpeg" alt="interview pic">
-                <div class="card-content">
-                    <span>Interviewing Your Interviewer</span>
-
-                    <p>Learn 7 strategies to level the playing field and
-                        co-create an interivew...
-                    </p>
-                </div>
+              <div class="clearfix">
+                <button
+                  type="button"
+                  onclick="document.getElementById('id01').style.display='none'"
+                  class="cancelbtn"
+                >
+                  Cancel
+                </button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
             </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="main">
+        <a href="../HTML/blog-article.html">
+          <div class="card">
+            <img
+              src="../images/interview.jpeg"
+              alt="interview pic"
+              class="cardimage"
+            />
+            <div class="card-content">
+              <span class="card-content-heading"
+                >Interviewing Your Interviewer</span
+              >
+
+              <p>
+                Learn 7 strategies to level the playing field and co-create an
+                interivew...
+              </p>
+            </div>
+          </div>
         </a>
         <a href="blog-article-2.html">
-            <div class="card">
-                <img src="../images/hard-question.jpeg" alt="hard questions pic">
-                <div class="card-content">
-                    <span>Hard Questions You Should Be Asking</span>
+          <div class="card">
+            <img
+              src="../images/hard-question.jpeg"
+              alt="hard questions pic"
+              class="cardimage"
+            />
+            <div class="card-content">
+              <span class="card-content-heading"
+                >Hard Questions You Should Be Asking</span
+              >
 
-                    <p>Ask these 5 questions of your interviewer and
-                        find the right fit...
-                    </p>
-                </div>
+              <p>
+                Ask these 5 questions of your interviewer and find the right
+                fit...
+              </p>
             </div>
+          </div>
         </a>
         <a href="blog-article-3.html">
-            <div class="card">
-                <img src="../images/secret-life.jpeg" alt="secret-life of recruiter pic">
-                <div class="card-content">
-                    <span>The Secret Life of Recruiters</span>
+          <div class="card">
+            <img
+              src="../images/secret-life.jpeg"
+              alt="secret-life of recruiter pic"
+              class="cardimage"
+            />
+            <div class="card-content">
+              <span class="card-content-heading"
+                >The Secret Life of Recruiters</span
+              >
 
-                    <p>Find out how they spend their days
-                        and what they're really thinking...
-                    </p>
-                </div>
+              <p>
+                Find out how they spend their days and what they're really
+                thinking...
+              </p>
             </div>
+          </div>
         </a>
-    </section>
-    <section class="footer">
+      </section>
+      <section class="footer">
         <p>
-            &copy; 2020 Behuman Resources            
+          &copy; 2020 Behuman Resources
         </p>
+      </section>
     </section>
-</section>
 
-<script>
-    // Modal Functionality
-    var modal = document.getElementById('id01');
+    <script>
+      // Modal Functionality
+      var modal = document.getElementById("id01");
 
-    window.onclick = function (event) {
+      window.onclick = function(event) {
         if (event.target === modal) {
-            modal.style.display = "none";
+          modal.style.display = "none";
         }
-    }
-
-</script>
-</body>
-</html>    
+      };
+    </script>
+  </body>
+</html>

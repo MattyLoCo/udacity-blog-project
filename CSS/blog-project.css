@@ -1,238 +1,237 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-h1 { 
-    font-size: 10vh;
-    font-family: "Arimo", Helvetica;
-    color: #FF8369;
-    text-align: center;
+h1 {
+  font-size: 10vh;
+  font-family: "Arimo", Helvetica;
+  color: #ff8369;
+  text-align: center;
 }
 
 h2 {
-    font-size: 25px;
-    font-family: "Mukta Vaani", sans-serif;
-    font-weight: 600;
-    color: #79C7D6;
-    text-align: center;
+  font-size: 25px;
+  font-family: "Mukta Vaani", sans-serif;
+  font-weight: 600;
+  color: #79c7d6;
+  text-align: center;
 }
 
 h3 {
-    font-size: 5vh;
-    font-family: "Open sans", sans-serif;
-    font-weight: 600;
-    color: #555;
-    text-align: center;
+  font-size: 5vh;
+  font-family: "Open sans", sans-serif;
+  font-weight: 600;
+  color: #555;
+  text-align: center;
 }
 
 html body {
-    margin: 0 auto;
-    background-color: #fafbfc;
-    font-size: 20px;
-    font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  background-color: #fafbfc;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Mobile Response */
 @media screen and (max-width: 1023px) {
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    nav > ul > li {
-        float: right;
-    }
+  nav > ul > li {
+    float: right;
+  }
 
-    .portrait {
-        height: 220px;
-        width: 220px;
-        border-radius: 50%;    
-        text-align: center;    
-    }
+  .portrait {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    text-align: center;
+  }
 
-    figcaption {
-        font-size: 15px;
-        font-style: italic;        
-        color: #555;
-        text-align: center;  
-    }
-    
-    .bio {
-        grid-area: bio;
-        font-style: italic;
-        color: #555;
-        text-align: center;        
-        justify-self: center;
-        align-self: center;
-    }
-    
-    /* Subscribe Form */
-    .subscribe-form {
-        /* display: flex;
+  figcaption {
+    font-size: 15px;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+  }
+
+  /* Subscribe Form */
+  .subscribe-form {
+    /* display: flex;
         flex-flow: wrap;
         margin: auto; */
-        text-align: center;
-        justify-self: center;  
-    }
+    text-align: center;
+    justify-self: center;
+  }
 
-    .cancelbtn, 
-    .signupbtn {
-        width: 100%;
-    }
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
 
-    .main {
-        display: flex;
-        flex-flow: wrap;
-        list-style: none;
-        justify-content: space-around;
-        align-content: flex-end;
-    }
+  .main {
+    display: flex;
+    flex-flow: wrap;
+    list-style: none;
+    justify-content: space-around;
+    align-content: flex-end;
+  }
 
-    .card {
-        border-radius: 25px;
-        box-shadow: 0 4px 8px 0 lightgray;
-        transition: 0.3s;
-        width: 300px;
-        height: 450px;
-    }
-    
-    .card > img {
-        width: 100%;
-        height: 300px;
-        border-radius: 25px 25px 0 0;
-    }
-    
-    .card-content {
-        padding: 2px 16px;        
-    }
+  .card {
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 lightgray;
+    transition: 0.3s;
+    width: 300px;
+    height: 450px;
+  }
 
-    a:link {
-        color: #555;
-        text-decoration: none;
-        text-align: center;
-    }
+  .cardimage {
+    width: 100%;
+    height: 300px;
+    border-radius: 25px 25px 0 0;
+  }
 
-    .card-content > span {
-        color: #FF8369;
-        text-transform: uppercase;
-        font-weight: 900;
-    }
-    
-    .card:hover {
-        box-shadow: 0 8px 16px 0 lightgray;
-    }
-    
-    .footer {
-        margin: auto;
-    }     
-}  
+  .card-content {
+    padding: 2px 16px;
+  }
+
+  a:link {
+    color: #555;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .card-content-heading {
+    color: #ff8369;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 lightgray;
+  }
+
+  .footer {
+    margin: auto;
+  }
+}
 
 /* Desktop Response */
 @media (min-width: 1024px) {
-    .container {
-        display: grid;        
-        grid-template-columns: 35% 35% 30%;
-        grid-template-rows: 4em 250px 10% 20px 500px 7%;
-        grid-template-areas: 
-        
-            "hd hd hd"
-            "por bio bio"
-            "sub sub sub"
-            "sp sp sp"
-            "main main main"
-            "ft ft ft";
-        grid-gap: 5px; 
-    }
+  .container {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 4em 250px 10% 20px 500px 7%;
+    grid-template-areas:
+      "hd hd hd"
+      "por bio bio"
+      "sub sub sub"
+      "sp sp sp"
+      "main main main"
+      "ft ft ft";
+    grid-gap: 5px;
+  }
 
-    .header {
-        grid-area: hd;
-        position: static;
-    }
+  .header {
+    grid-area: hd;
+    position: static;
+  }
 
-    nav > ul > li {
-        float: ;
-    }
+  nav > ul > li {
+    float: ;
+  }
 
-    .portrait {
-        display: flex;
-        grid-area: por;
-        margin: auto;        
-        height: 220px;
-        width: 220px;
-        border-radius: 50%;        
-    }
+  .portrait {
+    display: flex;
+    grid-area: por;
+    margin: auto;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+  }
 
-    figcaption {
-        font-size: 15px;
-        font-style: italic;        
-        color: #555;
-        text-align: center;  
-    }
-    
-    .bio {
-        grid-area: bio;
-        font-style: italic;
-        color: #555;
-        text-align: center;        
-        justify-self: center;
-        align-self: center;
-    }
-    
-    .subscribe-form {
-        text-align: center;
-        grid-area: sub;
-        justify-self: center;  
-    }
+  figcaption {
+    font-size: 15px;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+  }
 
-    .main {
-        grid-area: main;
-        display: flex;
-        flex-flow: wrap;
-        list-style: none;
-        justify-content: space-around;
-        align-content: flex-end;
-    }
+  .bio {
+    grid-area: bio;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+  }
 
-    .card {
-        border-radius: 25px;
-        box-shadow: 0 4px 8px 0 lightgray;
-        transition: 0.3s;
-        width: 300px;
-        height: 450px;
-    }
-    
-    .card > img {
-        width: 100%;
-        height: 300px;
-        border-radius: 25px 25px 0 0;
-    }
-    
-    .card-content {
-        padding: 2px 16px;        
-    }
+  .subscribe-form {
+    text-align: center;
+    grid-area: sub;
+    justify-self: center;
+  }
 
-    a:link {
-        color: #555;
-        text-decoration: none;
-        text-align: center;
-    }
+  .main {
+    grid-area: main;
+    display: flex;
+    flex-flow: wrap;
+    list-style: none;
+    justify-content: space-around;
+    align-content: flex-end;
+  }
 
-    .card-content > span {
-        color: #FF8369;
-        text-transform: uppercase;
-        font-weight: 900;
-    }
-    
-    .card:hover {
-        box-shadow: 0 8px 16px 0 lightgray;
-    }
-    
-    .spacer {
-        grid-area: sp;
-    }
-    
-    .footer {
-        grid-area: ft;
-        margin: auto;
-    }  
+  .card {
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 lightgray;
+    transition: 0.3s;
+    width: 300px;
+    height: 450px;
+  }
+
+  .cardimage {
+    width: 100%;
+    height: 300px;
+    border-radius: 25px 25px 0 0;
+  }
+
+  .card-content {
+    padding: 2px 16px;
+  }
+
+  a:link {
+    color: #555;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .card-content-heading {
+    color: #ff8369;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 lightgray;
+  }
+
+  .spacer {
+    grid-area: sp;
+  }
+
+  .footer {
+    grid-area: ft;
+    margin: auto;
+  }
 }
