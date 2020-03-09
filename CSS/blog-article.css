@@ -20,6 +20,7 @@ h3 {
   font-family: "Open sans", sans-serif;
   font-weight: 600;
   color: #555;
+  margin: auto;
 }
 
 html body {
@@ -36,8 +37,8 @@ html body {
     flex-wrap: wrap;
   }
 
-  .header {
-    align-content: center;
+  .heading {
+    margin: auto;
   }
 
   article > h1 {
@@ -45,8 +46,8 @@ html body {
     text-align: center;
   }
 
-  nav > ul > li {
-    float: right;
+  nav {
+    margin: auto;  
   }
 
   /* Subscribe Form */
@@ -64,6 +65,11 @@ html body {
 
   .main {
     margin: 0px 10%;
+  }
+
+  .social-links {
+    margin: auto;
+    text-align: center;
   }
 
   .line-break {
@@ -107,11 +113,12 @@ html body {
   .container {
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 2em 50px 1fr 70px;
+    grid-template-rows: 2em 50px 1fr 120px 70px;
     grid-template-areas:
       "hd hd hd"
       "ttl ttl ttl"
       ". main ."
+      "soc soc soc"
       "ft ft ft";
 
     grid-gap: 5px;
@@ -135,10 +142,9 @@ html body {
     grid-area: main;
   }
 
-  .subscribe-form {
-    text-align: center;
-    grid-area: sub;
-    justify-self: center;
+  .social-links {
+      grid-area: soc;
+      text-align: center;
   }
 
   hr {
